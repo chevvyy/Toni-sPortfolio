@@ -4,7 +4,7 @@
 
 :root {
     --navbarcolor: blue;
-    --textcolor: #12664F;
+    --textcolor: rgb(51, 102, 102);
   }
 
 
@@ -54,6 +54,12 @@ li{
     grid-template-columns: repeat(4, 1fr);
     font-size: 24px;
     grid-gap: 15px;
+    border-bottom: 2px rgb(51, 102, 102) solid;
+}
+
+nav{
+    background-color: white;
+    height: 8%
 }
 
 .picgrid{
@@ -83,7 +89,6 @@ nav p{
     height: 35px;
     background-color: white;
     border-radius: 60px;
-    border: 2px solid black;
 }
 
 .navhr{
@@ -91,7 +96,7 @@ nav p{
     width: 100%;
     border-width:0;
     color:gray;
-    background-color:gray;
+    background-color:white;
     position: relative;
     top: 10px;
 }
