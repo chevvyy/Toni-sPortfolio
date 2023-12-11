@@ -55,6 +55,15 @@ li{
     padding-top: 2%;
 }
 
+.navgrid0{
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-gap: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 .navgrid2{
     width: 100%;
     display: grid;
@@ -426,10 +435,6 @@ nav{
 
 .pgr a:hover + .pgr2{
     right: 0;
-}
-
-.pp{
-
 }
 
 .pp p{
