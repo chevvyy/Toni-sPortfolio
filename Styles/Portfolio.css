@@ -291,6 +291,12 @@ nav{
 
 .fg img{
     max-width: 50px;
+    width: 100%;
+}
+
+.fg a{
+    width: 50px;
+    height: 50px;
 }
 
 .footer p{
@@ -315,9 +321,11 @@ nav{
 .pgl2 {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 3.5em 4em 1.6em 1em;
     width: auto;
+    padding-top: 5%;
     margin-bottom: 2%;
-    height: 95%;
+    height: 90%;
     max-width: 100%;
     width: 100%;
     text-align: center;
@@ -330,23 +338,24 @@ nav{
 
 .pgl2 h2{
     text-align: left;
-    padding-left: 5%;
+    padding-left: 10%;
+    margin-bottom: 0;
     color: white;
 }
 
 .pgl2 h3{
         text-align: left;
-        padding-left: 5%;
+        margin-top: 0;
+        padding-left: 10%;
         color: white;
 }
 
 .pgl2 p{
+    text-align: left;
     width: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    padding-left: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 10%;
     background-color: rgb(51, 102, 102);
     color: white;
 }
@@ -380,13 +389,13 @@ nav{
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 3.5em 4em 1.6em 1em;
     width: auto;
+    padding-top: 5%;
     margin-bottom: 2%;
-    height: 95%;
+    height: 90%;
     max-width: 100%;
     width: 100%;
-    place-items: center;
-    text-align: center;
     background-color: rgb(51, 102, 102);
     z-index: 2;
     position: relative;
@@ -394,19 +403,55 @@ nav{
     transition: right 1s;
 }
 
+.pgr2 h2{
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom: 0;
+    color: white;
+}
+
+.pgr2 h3{
+        text-align: left;
+        margin-top: 0;
+        padding-left: 10%;
+        color: white;
+}
+
 .pgr2 p{
     width: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    padding-left: 5%;
+    padding-left: 10%;
     background-color: rgb(51, 102, 102);
     color: white;
 }
 
 .pgr a:hover + .pgr2{
     right: 0;
+}
+
+.pp{
+
+}
+
+.pp p{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pp h2{
+    margin-top: 5%;
+    font-size: 2em;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.pp img{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
 }
 
 @media screen and (max-width:1400px) and (min-width:1240px) {
