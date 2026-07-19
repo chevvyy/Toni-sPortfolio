@@ -20,6 +20,16 @@ body{
     font-family: 'Avenir';
 }
 
+.portfolioBody{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.portfolioBody .footer{
+    margin-top: auto;
+}
+
 .title{
     text-align: center;
     font-size: 500%;
@@ -469,7 +479,7 @@ nav{
     justify-content: center;
     gap: 15px;
     width: 70%;
-    margin: 0 auto 3% auto;
+    margin: 3% auto;
 }
 
 .bubble{
