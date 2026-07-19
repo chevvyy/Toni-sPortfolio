@@ -185,6 +185,9 @@ nav p{
     height: 35px;
     background-color: white;
     border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navhr{
@@ -458,6 +461,105 @@ nav{
     width: 70%;
     margin-left: 15%;
     margin-top: 10%;
+}
+
+.filterBubbles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 70%;
+    margin: 0 auto 3% auto;
+}
+
+.bubble{
+    font-family: 'Avenir';
+    font-size: .55em;
+    padding: 10px 25px;
+    border-radius: 60px;
+    border: 2px solid rgb(51, 102, 102);
+    background-color: white;
+    color: rgb(51, 102, 102);
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+.bubble:hover{
+    background-color: rgba(51, 102, 102, 0.15);
+}
+
+.bubble.active{
+    background-color: rgb(51, 102, 102);
+    color: white;
+}
+
+.projectDetail{
+    display: none;
+}
+
+.projectDetail.open{
+    display: block;
+    width: 70%;
+    margin: 0 auto 5% auto;
+    padding-bottom: 4%;
+}
+
+.projectDetail .detailHero{
+    width: 100%;
+    margin-top: 2%;
+    box-shadow: 5px 5px 10px rgb(95, 92, 92);
+}
+
+.projectDetail .detailClose{
+    font-family: 'Avenir';
+    font-size: .55em;
+    margin-top: 3%;
+    padding: 8px 22px;
+    border-radius: 60px;
+    border: 2px solid rgb(51, 102, 102);
+    background-color: white;
+    color: rgb(51, 102, 102);
+    cursor: pointer;
+}
+
+.projectDetail h2{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.projectDetail .detailCategory{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.projectDetail .detailDisclaimer{
+    text-align: center;
+    font-size: .6em;
+    font-style: italic;
+}
+
+.projectDetail p{
+    text-align: center;
+    width: 90%;
+    margin: 1em auto;
+}
+
+.detailGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 3%;
+}
+
+.detailGallery img{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgb(95, 92, 92);
+}
+
+body.detail-open #portfolioFilters,
+body.detail-open #portfolioGrid{
+    display: none;
 }
 
 @media screen and (max-width:1400px) and (min-width:1240px) {

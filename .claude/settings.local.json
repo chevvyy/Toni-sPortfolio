@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "Bash(command -v python3)",
+      "Bash(command -v python)",
+      "Bash(command -v npx)",
+      "PowerShell(Get-Command python,py,node,npx -ErrorAction SilentlyContinue)"
+    ]
+  }
+}
